@@ -1,0 +1,6 @@
+<form method=POST action='/articles/<%= params["id"] %>'>
+  <input id="hidden" type="hidden" name="_method" value="PATCH">
+  <p>Article Title: <input type="text" name="title" placeholder=<%= Article.find(params["id"]).title %>></p>
+  <p>Article Content: <input type="text" name="content" placeholder=<%= Article.find(params["id"]).content %>></p>
+  <p><input type="submit">
+</form>
