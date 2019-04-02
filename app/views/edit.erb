@@ -1,0 +1,10 @@
+
+<form action='/articles/<%= params["id"] %>' method="POST">
+	<input id="hidden" type="hidden" name="_method" value="PATCH">
+  Title:<br>
+  <input type="text" name="title" placeholder="<%= params["title"] %>"><br>
+  Content:<br>
+  <input type="text" name="content" placeholder="<%= params["content"]%>">
+<br>
+  <input type="submit">
+</form>
